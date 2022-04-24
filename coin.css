@@ -1,0 +1,83 @@
+body{
+    background-image: url("background.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#coinbox{
+    background-color:honeydew;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    height:300px;
+   width: 300px;
+   box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding: 50px;
+   -webkit-perspective: 300px;
+   perspective: 300px;
+
+}
+#start{
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.coin{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+}
+.coin img{
+    border-radius:100% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+
+}
+.vini,.col{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.col{
+    transform: rotateX(180deg);
+}
+@keyframes spin-vini{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes spin-col{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+button{
+    background-color: darkviolet;
+    text-align: center;
+    color: cornsilk;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
